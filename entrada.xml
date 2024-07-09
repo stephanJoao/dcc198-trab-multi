@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Rotas (Fluxos e veículos) -->
+
+<routes>
+    <!-- Veículos configuráveis -->
+    <!-- 
+        id : nome do veículo 
+        accel : aceleração (m/s^2) 
+        decel : desaceleração (m/s^2)
+        lenght : comprimento (m) 
+        minGap : espaço vazio em relaçã ao da frente (m)
+        maxSpeed : velocidade máxima do veículo (técnica) (m/s) 
+    -->
+    <!-- 
+    <vType id="Carro" accel="3.0" decel="4.0" lenght="5.0" minGap="2.5" maxSpeed="10" />
+    <vType id="Moto" accel="3.5" decel="5.0" lenght="2" minGap="2.5" maxSpeed="12" />
+    -->
+
+    <!-- Veículos predefinidos pelo SUMO (vClass) -->
+
+    <vType id="carro" vClass="passenger" />
+    <vType id="onibus" vClass="bus" />
+    <!-- Definição de Fluxos -->
+
+    <!--
+        id : nome do fluxo
+        color : cor dos veículos desse fluxo (RGB)
+        begin : hora de partida do primeiro veículo (em seg)
+        end : intervalo de fim de partida (em seg)
+        period : insira veículos igualmente espaçados nesse período (em seg) - fazer ((tempo analisado)/(num veículos) 
+        type : tipo de veículo definido no elemento anterior
+        departLane : Qual faixa o veículo deve ser inserido
+            (random : pista aleatória
+             free : a faixa mais livre
+             best : a faixa livre que permite o veículo a viagem mais longa sem mudar de faixa
+             first : a faixa mais a direita que o veiculo pode usar
+            )
+        from : arco de entrada
+        to : arco de saída
+    -->
+    <!-- Fluxo 16:40 - 17:10 -->
+    <!-- FROM MORRO -->
+    <flow id="CMUF"  color="0,0,255" begin="0" end="1800" period="12"  type="carro"  departLane="best" from="morro-0" to="saida-uf"/>
+    <flow id="CMSP"  color="0,0,255" begin="0" end="1800" period="45"  type="carro"  departLane="best" from="morro-0" to="sp-0-s"/>
+    <flow id="OMUF"  color="0,0,255" begin="0" end="1800" period="600" type="onibus" departLane="best" from="morro-0" to="saida-uf"/>
+    <flow id="OMSP"  color="0,0,255" begin="0" end="1800" period="900" type="onibus" departLane="best" from="morro-0" to="sp-0-s"/>
+    
+    <!-- FROM UF -->
+    <flow id="CUFM"  color="255,0,0" begin="0" end="1800" period="7"   type="carro"  departLane="best" from="uf-0" to="morro-4-s"/>
+    <flow id="CUFSP" color="255,0,0" begin="0" end="1800" period="9"   type="carro"  departLane="best" from="uf-0" to="sp-0-s"/>
+    <flow id="OUFM"  color="255,0,0" begin="0" end="1800" period="900" type="onibus" departLane="best" from="uf-0" to="morro-4-s"/>
+    <flow id="OUFSP" color="255,0,0" begin="0" end="1800" period="450" type="onibus" departLane="best" from="uf-0" to="sp-0-s"/>
+
+    <!-- FROM SP -->
+    <flow id="CSPM"  color="0,255,0" begin="0" end="1800" period="14"  type="carro"  departLane="best" from="sp-0" to="morro-4-s"/>
+    <flow id="CSPUF" color="0,255,0" begin="0" end="1800" period="7"   type="carro"  departLane="best" from="sp-0" to="saida-uf"/>
+    <flow id="OSPM"  color="0,255,0" begin="0" end="1800" period="200" type="onibus" departLane="best" from="sp-0" to="morro-4-s"/>
+    <flow id="OSPUF" color="0,255,0" begin="0" end="1800" period="300" type="onibus" departLane="best" from="sp-0" to="saida-uf"/>
+    
+    
+</routes>
