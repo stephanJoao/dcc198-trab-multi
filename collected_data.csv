@@ -1,0 +1,13 @@
+entrada,saida,veiculo,contagem
+SP,UF,carro,245
+SP,UF,onibus,5
+SP,morro,carro,123
+SP,morro,onibus,8
+UF,SP,carro,192
+UF,SP,onibus,3
+UF,morro,carro,249
+UF,morro,onibus,1
+morro,SP,carro,40
+morro,SP,onibus,1
+morro,UF,carro,146
+morro,UF,onibus,2
