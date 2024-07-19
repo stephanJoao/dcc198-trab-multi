@@ -24,16 +24,16 @@ def calculate_flux(file_name):
                     ]
                     data.append(new_row)
 
-    df = pd.DataFrame(data, columns=['time', 'edge', 'lane', 'vehicle', 'pos', 'speed'])
-    df['time'] = df['time'].astype(float).astype(int)
-    df['pos'] = df['pos'].astype(float)
-    df['speed'] = df['speed'].astype(float)    
+    raw = pd.DataFrame(data, columns=['time', 'edge', 'lane', 'vehicle', 'pos', 'speed'])
+    raw['time'] = raw['time'].astype(float).astype(int)
+    raw['pos'] = raw['pos'].astype(float)
+    raw['speed'] = raw['speed'].astype(float)    
 
-    columns = df[df['edge'].str.startswith('saida')]['edge'].unique()
+    columns = raw[raw['edge'].str.startswith('saida')]['edge'].unique()
     df_results = pd.DataFrame(columns=columns)
 
     for saida in columns:
-        df_edge = df[df['edge'] == saida]
+        df_edge = raw[raw['edge'] == saida]
         df_edge = df_edge.sort_values(by='time')
         vehicles = df_edge['vehicle'].unique()
         num_vehicles = len(vehicles)
@@ -42,6 +42,18 @@ def calculate_flux(file_name):
         flux = num_vehicles / (max_time - min_time)
         df_results[saida] = [flux]
 
-    print(df_results)
+    return df_results
+
+    
+def calculate_fluxes(file_names):
+    df = pd.DataFrame()
+    for file_name in file_names:
+        df = pd.concat([df, calculate_flux(file_name)], axis=0)
+    df = df.reset_index(drop=True)
+
+    return df
+          
         
-calculate_flux('rawDump.xml')
+if __name__ == '__main__':
+    f = [f'results/rawDump_{i}.xml' for i in range(1, 30+1)]
+    calculate_fluxes(f)
