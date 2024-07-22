@@ -50,6 +50,7 @@ def calculate_flux(file_name):
         buses_flux = num_buses / (max_time_buses - min_time)        
         df_results[saida] = [cars_flux, buses_flux]
         df_results['type'] = ['car', 'bus']
+    
     return df_results
     
 def calculate_fluxes(file_names):
@@ -61,6 +62,8 @@ def calculate_fluxes(file_names):
     return df
                   
 if __name__ == '__main__':
-    f = [f'results1/rawDump_{i}.xml' for i in range(1, 3+1)]
-    results = calculate_fluxes(f)
-    print(results)
+    result = calculate_flux('rawDump.xml')
+   
+    # f = [f'results1/rawDump_{i}.xml' for i in range(1, 3+1)]
+    # results = calculate_fluxes(f)
+    # print(results)

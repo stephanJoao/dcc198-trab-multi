@@ -1,7 +1,10 @@
+import pandas as pd
 from input_gen import input_gen
 from flux_analysis import calculate_fluxes
 
 if __name__ == '__main__':
+	
+	df_results = pd.DataFrame()
 	
 	factors = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
 	cars_subs = 0.0
@@ -12,9 +15,11 @@ if __name__ == '__main__':
 		# rodar simulação x vezes com input.xml e salvar na pasta results
 		files = [f'results/rawDump{i}.xml' for i in range(1, x+1)]
 		results = calculate_fluxes(files)
+		results['factor'] = factor
+		df_results = pd.concat([df_results, results], axis=0)
 
-
-	input_gen(verbose=True)
+	# plot car flux
+	# plot bus flux
 
 # (rodar simulação para diferentes fatores de substituição de carros por ônibus)
 

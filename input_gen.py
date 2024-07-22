@@ -49,4 +49,4 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 		f.write('</routes>')
 
 if __name__ == '__main__':
-	input_gen(verbose=True)
+	input_gen(factor=1.0, cars_subs_percentage=0.0, verbose=True)
