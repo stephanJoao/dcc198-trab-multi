@@ -2,7 +2,7 @@ import math
 import pandas as pd
 import numpy as np
 
-def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0.3, verbose=False):
+def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0.0, name='input_gen', verbose=False):
 	# HARD CODED VALUES
 	collected_data_time = 1800 # 30 minutes
 	avg_bus_capacity = 40
@@ -21,7 +21,7 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 	data['color'] = data['entrada'].apply(lambda x: '0,0,255' if x == 'M' else ('255,0,0' if x == 'UF' else '0,255,0'))
 
 	# create XML file
-	with open('input_gen_test.xml', 'w') as f:
+	with open(name + '.xml', 'w') as f:
 		f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 		f.write('<routes>\n')
 		f.write('\t<vType id="carro" vClass="passenger" />\n')

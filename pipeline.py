@@ -1,3 +1,21 @@
+from input_gen import input_gen
+from flux_analysis import calculate_fluxes
+
+if __name__ == '__main__':
+	
+	factors = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
+	cars_subs = 0.0
+
+	for factor in factors:
+		input_gen(factor=factor, cars_subs_percentage=cars_subs, name='input', verbose=True)
+		# x = ?
+		# rodar simulação x vezes com input.xml e salvar na pasta results
+		files = [f'results/rawDump{i}.xml' for i in range(1, x+1)]
+		results = calculate_fluxes(files)
+
+
+	input_gen(verbose=True)
+
 # (rodar simulação para diferentes fatores de substituição de carros por ônibus)
 
 # intervalo de variação do fator de multiplicação do fluxo de entrada
