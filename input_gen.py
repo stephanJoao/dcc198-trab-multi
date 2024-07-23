@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 
 def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0.0, name='input_gen', verbose=False):
+	
+	print('\n---- GERANDO INPUT ----\n')
+
 	# HARD CODED VALUES
 	collected_data_time = 1800 # 30 minutes
 	avg_bus_capacity = 40
@@ -47,6 +50,9 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" from="{5}" to="{6}"/>\n'.format(data_carro['id'].values[0], data_carro['color'].values[0], collected_data_time, cars_period, data_carro['veiculo'].values[0], data_carro['from'].values[0], data_carro['to'].values[0]))
 				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" from="{5}" to="{6}"/>\n'.format(data_onibus['id'].values[0], data_onibus['color'].values[0], collected_data_time, buses_period, data_onibus['veiculo'].values[0], data_onibus['from'].values[0], data_onibus['to'].values[0]))
 		f.write('</routes>')
+	
+	print('\n---- INPUT GERADO ----\n')
+
 
 if __name__ == '__main__':
 	input_gen(factor=1.0, cars_subs_percentage=0.0, verbose=True)

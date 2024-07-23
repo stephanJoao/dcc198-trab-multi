@@ -1,9 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-if __name__ == '__main__':
+def plot_results(df_results, output_dir='imagens'):
+	if not os.path.exists(output_dir):
+		os.makedirs(output_dir)
 	# read results
-	df_results = pd.read_csv('results.csv')
+	#df_results = pd.read_csv('results.csv')
 
 	types = df_results['type'].unique()
 
@@ -18,7 +21,12 @@ if __name__ == '__main__':
 		plt.xlabel('Fator de multiplicação')
 		plt.ylabel('Fluxo médio')
 		plt.legend()
-		plt.show()
+		#plt.show()
+
+		# Salva o gráfico no arquivo
+		filename = os.path.join(output_dir, f'fluxo_{type}_vs_factor.png')
+		plt.savefig(filename)
+		plt.close()  # Fecha o gráfico para liberar memória
 
 
 

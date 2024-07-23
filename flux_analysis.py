@@ -2,6 +2,9 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 
 def calculate_flux(file_name):
+
+    print('\n---- CALCULANDO FLUXOS ----\n')
+
     data = []
     tree = ET.parse(file_name)
     root = tree.getroot()
@@ -51,6 +54,8 @@ def calculate_flux(file_name):
         df_results[saida] = [cars_flux, buses_flux]
         df_results['type'] = ['car', 'bus']
     
+    print('\n---- FLUXOS CALCULADOS ----\n')
+
     return df_results
     
 def calculate_fluxes(file_names):
