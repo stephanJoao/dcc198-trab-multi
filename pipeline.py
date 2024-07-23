@@ -1,3 +1,4 @@
+import os, subprocess
 import pandas as pd
 from input_gen import input_gen
 from flux_analysis import calculate_fluxes
@@ -10,13 +11,19 @@ if __name__ == '__main__':
 	cars_subs = 0.0
 
 	for factor in factors:
-		input_gen(factor=factor, cars_subs_percentage=cars_subs, name='input', verbose=True)
-		# x = ?
-		# rodar simulação x vezes com input.xml e salvar na pasta results
-		files = [f'results/rawDump{i}.xml' for i in range(1, x+1)]
+		input_gen(factor=factor, cars_subs_percentage=cars_subs, name='entrada.poly', verbose=True)
+		x = 10
+		
+		# run sh command
+		subprocess.run(['sh', './run_simulation.sh'], check=True)
+		
+
+		files = [f'results/rawDump_{i}.xml' for i in range(1, x+1)]
 		results = calculate_fluxes(files)
 		results['factor'] = factor
 		df_results = pd.concat([df_results, results], axis=0)
+
+	df_results.to_csv('results.csv', index=False)
 
 	# plot car flux
 	# plot bus flux
