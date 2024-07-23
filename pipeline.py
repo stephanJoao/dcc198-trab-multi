@@ -14,7 +14,8 @@ if __name__ == '__main__':
 		print('\n---- GERANDO INPUT ----\n')
 		input_gen(factor=factor, cars_subs_percentage=cars_subs, name='./code_sumo/multidisciplinar/entrada.poly', verbose=True)
 		print('\n---- INPUT GERADO ----\n')
-		x = 10
+		
+		x = 3
 		
 		# run sh command
 		subprocess.run(['sh', './code_sumo/multidisciplinar/run_simulation.sh'], check=True)
