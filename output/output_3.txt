@@ -1,0 +1,24 @@
+Loading net-file from './code_sumo/modelo.net.xml' ... done (8ms).
+Loading additional-files from './code_sumo/entrada.poly.xml' ... done (1ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 6676.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 9.78s
+ Real time factor: 682.757
+ UPS: 66102.679485
+Vehicles: 
+ Inserted: 3508
+ Running: 0
+ Waiting: 0
+Statistics (avg of 3508):
+ RouteLength: 601.34
+ Speed: 4.22
+ Duration: 184.25
+ WaitingTime: 8.19
+ TimeLoss: 156.15
+ DepartDelay: 1661.47
+
+DijkstraRouter answered 98980 queries and explored 16.25 edges on average.
+DijkstraRouter spent 0.27s answering queries (0.00ms on average).
