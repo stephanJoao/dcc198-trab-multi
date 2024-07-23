@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-07-09 17:22:20 by Eclipse SUMO netedit Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\marce\Sumo\2023-11-13-12-19-25\dados-1-após09072024\modelo.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\marce\Sumo\2023-11-13-12-19-25\dados-1-após09072024\modelo.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-665825.18,2409385.34" convBoundary="0.00,379.59,2922.10,1298.54" origBoundary="-43.396140,-21.780158,-43.366830,-21.767149" projParameter="+proj=utm +zone=23 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="highway.residential" priority="3" numLanes="1" speed="13.89" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.secondary" priority="11" numLanes="1" speed="27.78" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+
+    <edge id=":1337694466_0" function="internal">
+        <lane id=":1337694466_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="8.97" shape="2637.21,790.64 2639.70,790.65 2641.40,790.44 2643.08,790.03 2645.51,789.40"/>
+        <lane id=":1337694466_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="8.97" shape="2637.10,793.84 2639.91,793.85 2641.82,793.63 2643.71,793.17 2646.44,792.47"/>
+    </edge>
+    <edge id=":1337694466_2" function="internal">
+        <lane id=":1337694466_2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="9.61" length="10.29" shape="2639.47,798.37 2641.09,794.70 2642.64,791.97 2644.11,790.21 2645.51,789.40"/>
+        <lane id=":1337694466_2_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="8.94" length="10.29" shape="2639.47,798.37 2640.60,796.25 2642.14,794.56 2644.09,793.30 2646.44,792.47"/>
+    </edge>
+    <edge id=":1337694471_0" function="internal">
+        <lane id=":1337694471_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="6.25" shape="2654.33,816.36 2652.77,815.34 2651.70,814.65 2650.61,814.01 2648.97,813.13"/>
+    </edge>
+    <edge id=":1337694471_1" function="internal">
+        <lane id=":1337694471_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="6.19" length="5.58" shape="2654.11,812.01 2652.71,812.95 2651.39,813.45 2650.14,813.51 2648.97,813.13"/>
+    </edge>
+    <edge id=":1337694487_0" function="internal">
+        <lane id=":1337694487_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="6.90" length="6.41" shape="2635.55,797.45 2634.87,795.84 2633.92,794.60 2632.70,793.72 2631.19,793.20"/>
+    </edge>
+    <edge id=":1337694487_1" function="internal">
+        <lane id=":1337694487_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="6.35" shape="2632.48,786.93 2633.99,787.74 2634.72,788.96 2635.47,790.10 2637.01,790.63"/>
+        <lane id=":1337694487_1_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="6.35" shape="2631.84,790.06 2633.49,790.90 2634.35,792.14 2635.21,793.29 2636.90,793.83"/>
+    </edge>
+    <edge id=":1349432612_0" function="internal">
+        <lane id=":1349432612_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.29" shape="2739.03,947.65 2738.91,947.39"/>
+    </edge>
+    <edge id=":1349432612_1" function="internal">
+        <lane id=":1349432612_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.31" shape="2741.83,946.08 2741.95,946.36"/>
+    </edge>
+    <edge id=":1349432707_0" function="internal">
+        <lane id=":1349432707_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.31" shape="2773.42,1025.89 2773.30,1025.61"/>
+    </edge>
+    <edge id=":1349432707_1" function="internal">
+        <lane id=":1349432707_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.29" shape="2776.22,1024.32 2776.34,1024.58"/>
+    </edge>
+    <edge id=":1367635062_0" function="internal">
+        <lane id=":1367635062_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="7.67" length="2.48" shape="2830.60,1203.01 2830.11,1202.46 2829.82,1202.04 2829.63,1201.57 2829.45,1200.86"/>
+    </edge>
+    <edge id=":1367635062_1" function="internal">
+        <lane id=":1367635062_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="20.84" length="0.83" shape="2832.56,1200.11 2832.62,1200.34 2832.68,1200.50 2832.78,1200.64 2832.94,1200.82"/>
+    </edge>
+    <edge id=":2473922008_0" function="internal">
+        <lane id=":2473922008_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="2777.00,766.46 2776.72,766.40"/>
+        <lane id=":2473922008_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="2777.71,763.34 2777.41,763.28"/>
+    </edge>
+    <edge id=":2815570999_0" function="internal">
+        <lane id=":2815570999_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="19.41" length="9.49" shape="2639.52,806.16 2637.83,803.94 2636.94,802.23 2636.36,800.36 2635.60,797.64"/>
+    </edge>
+    <edge id=":2815570999_1" function="internal">
+        <lane id=":2815570999_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="7.64" length="7.96" shape="2639.52,806.16 2638.71,804.72 2638.42,802.98 2638.65,800.92 2639.40,798.56"/>
+    </edge>
+    <edge id=":337145986_0" function="internal">
+        <lane id=":337145986_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="19.45" length="6.55" shape="2710.96,754.49 2709.14,754.05 2707.89,753.80 2706.62,753.64 2704.75,753.49"/>
+        <lane id=":337145986_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="19.45" length="6.55" shape="2711.71,751.38 2709.74,750.91 2708.38,750.64 2707.01,750.47 2704.99,750.30"/>
+    </edge>
+    <edge id=":3544585622_0" function="internal">
+        <lane id=":3544585622_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.29" shape="2855.83,784.51 2855.56,784.45"/>
+        <lane id=":3544585622_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.29" shape="2856.58,781.40 2856.27,781.33"/>
+    </edge>
+    <edge id=":4808995240_0" function="internal">
+        <lane id=":4808995240_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="6.56" length="6.79" shape="2645.66,789.36 2647.29,788.73 2648.52,787.71 2649.34,786.32 2649.76,784.55"/>
+    </edge>
+    <edge id=":4808995240_1" function="internal">
+        <lane id=":4808995240_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="8.17" length="5.42" shape="2646.64,792.42 2648.20,792.05 2649.33,791.92 2650.42,792.15 2651.84,792.83"/>
+    </edge>
+    <edge id=":4808995242_0" function="internal">
+        <lane id=":4808995242_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="19.45" length="11.35" shape="2659.84,789.12 2659.42,792.36 2659.19,794.59 2659.18,796.82 2659.44,800.06"/>
+        <lane id=":4808995242_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="19.45" length="11.35" shape="2656.66,788.74 2656.22,792.18 2655.98,794.56 2655.97,796.93 2656.26,800.39"/>
+    </edge>
+    <edge id=":4808995242_2" function="internal">
+        <lane id=":4808995242_2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="9.33" length="9.77" shape="2652.01,792.92 2655.14,794.83 2657.42,796.66 2658.85,798.40 2659.44,800.06"/>
+        <lane id=":4808995242_2_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="8.61" length="9.77" shape="2652.01,792.92 2653.66,794.15 2654.92,795.80 2655.79,797.88 2656.26,800.39"/>
+    </edge>
+    <edge id=":4808995243_0" function="internal">
+        <lane id=":4808995243_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="7.27" length="4.22" shape="2659.78,806.27 2659.83,807.50 2660.02,808.35 2660.47,809.10 2661.28,810.03"/>
+    </edge>
+    <edge id=":4808995243_1" function="internal">
+        <lane id=":4808995243_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="9.11" length="4.75" shape="2656.58,806.30 2656.59,807.71 2656.52,808.69 2656.19,809.61 2655.48,810.80"/>
+    </edge>
+    <edge id=":7847727627_0" function="internal">
+        <lane id=":7847727627_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="8.27" shape="2748.61,760.13 2746.10,760.08 2744.36,760.82 2742.62,761.56 2740.11,761.51"/>
+        <lane id=":7847727627_0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="8.27" shape="2748.61,760.13 2740.81,758.39"/>
+        <lane id=":7847727627_0_2" index="2" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="8.27" shape="2749.31,757.01 2741.51,755.26"/>
+    </edge>
+    <edge id=":8920469721_0" function="internal">
+        <lane id=":8920469721_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="2683.05,832.83 2683.05,832.83"/>
+    </edge>
+    <edge id=":8920469722_0" function="internal">
+        <lane id=":8920469722_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.26" shape="2677.13,838.45 2676.95,838.26"/>
+    </edge>
+    <edge id=":cluster_1347793483_8936202920_8936202921_0" function="internal">
+        <lane id=":cluster_1347793483_8936202920_8936202921_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="13.56" shape="2604.50,788.48 2601.08,789.07 2598.07,790.26 2595.12,791.73 2591.88,793.18"/>
+    </edge>
+    <edge id=":cluster_1347793483_8936202920_8936202921_1" function="internal">
+        <lane id=":cluster_1347793483_8936202920_8936202921_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="15.10" shape="2589.61,787.19 2593.85,785.29 2596.72,783.76 2599.67,782.66 2604.19,782.09"/>
+        <lane id=":cluster_1347793483_8936202920_8936202921_1_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="15.10" shape="2590.74,790.18 2594.71,788.39 2597.37,786.91 2600.13,785.84 2604.35,785.29"/>
+    </edge>
+    <edge id=":cluster_1349432737_8920469726_0" function="internal">
+        <lane id=":cluster_1349432737_8920469726_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="3.45" shape="2697.10,861.43 2696.62,860.53 2696.32,859.88 2695.97,859.27 2695.33,858.49"/>
+    </edge>
+    <edge id=":cluster_1349432737_8920469726_1" function="internal">
+        <lane id=":cluster_1349432737_8920469726_1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="4.04" shape="2697.31,856.71 2697.96,857.70 2698.55,858.28 2699.16,858.84 2699.86,859.81"/>
+    </edge>
+
+    <edge id="118998150#1" from="1337694471" to="2815570999" priority="1" type="highway.secondary" spreadType="center" shape="2651.23,814.33 2645.61,811.34 2641.72,808.81 2637.39,803.60">
+        <lane id="118998150#1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="11.90" shape="2648.97,813.13 2645.61,811.34 2641.72,808.81 2639.52,806.16">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="118998150#2" from="2815570999" to="1337694466" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="118998150#2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.20" shape="2639.40,798.56 2639.47,798.37">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="118998150#3" from="1337694466" to="4808995240" priority="1" type="highway.secondary" spreadType="center" shape="2641.85,792.40 2645.08,791.15 2649.16,790.16">
+        <lane id="118998150#3_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.17" shape="2645.51,789.40 2645.66,789.36">
+            <param key="origId" value="118998150"/>
+        </lane>
+        <lane id="118998150#3_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.17" shape="2646.44,792.47 2646.64,792.42">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="118998150#4" from="4808995240" to="4808995242" priority="1" type="highway.secondary" spreadType="center" shape="2649.16,790.16 2652.99,793.46 2657.41,795.89">
+        <lane id="118998150#4_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.20" shape="2651.84,792.83 2652.01,792.92">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="118998150#5" from="4808995242" to="4808995243" priority="1" type="highway.secondary" spreadType="center" shape="2657.41,795.89 2658.14,803.07 2658.18,806.71">
+        <lane id="118998150#5_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="6.08" shape="2659.44,800.06 2659.74,802.98 2659.78,806.27">
+            <param key="origId" value="118998150"/>
+        </lane>
+        <lane id="118998150#5_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="6.08" shape="2656.26,800.39 2656.54,803.16 2656.58,806.30">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="118998150#6" from="4808995243" to="1337694471" priority="1" type="highway.secondary" spreadType="center" shape="2658.18,806.71 2655.32,811.04 2651.23,814.33">
+        <lane id="118998150#6_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="1.84" shape="2655.48,810.80 2655.32,811.04 2654.11,812.01">
+            <param key="origId" value="118998150"/>
+        </lane>
+    </edge>
+    <edge id="964406022" from="2815570999" to="1337694487" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="964406022_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.20" shape="2635.60,797.64 2635.55,797.45">
+            <param key="origId" value="964406022"/>
+        </lane>
+    </edge>
+    <edge id="964406023" from="1337694487" to="1337694466" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="964406023_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.20" shape="2637.01,790.63 2637.21,790.64">
+            <param key="origId" value="964406023"/>
+        </lane>
+        <lane id="964406023_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.20" shape="2636.90,793.83 2637.10,793.84">
+            <param key="origId" value="964406023"/>
+        </lane>
+    </edge>
+    <edge id="entrada-morro" from="8920469722" to="1337694471" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center" shape="2677.04,838.35 2658.53,819.11 2651.23,814.33">
+        <lane id="entrada-morro_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="31.59" shape="2676.95,838.26 2658.53,819.11 2654.33,816.36">
+            <param key="origId" value="964405646"/>
+        </lane>
+    </edge>
+    <edge id="entrada-sp" from="cluster_1347793483_8936202920_8936202921" to="1337694487" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2603.89,786.91 2606.50,786.78 2618.16,788.05 2628.20,790.95 2633.95,792.13">
+        <lane id="entrada-sp_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="28.45" shape="2604.19,782.09 2606.64,781.97 2619.09,783.32 2629.35,786.29 2632.48,786.93">
+            <param key="origId" value="289398552"/>
+        </lane>
+        <lane id="entrada-sp_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="28.45" shape="2604.35,785.29 2606.55,785.18 2618.47,786.47 2628.58,789.40 2631.84,790.06">
+            <param key="origId" value="289398552"/>
+        </lane>
+        <param key="origFrom" value="1347793483"/>
+    </edge>
+    <edge id="entrada-uf" from="337145986" to="4808995242" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center" shape="2708.08,752.14 2685.03,750.40 2674.68,754.25 2667.58,759.70 2662.44,766.97 2659.37,779.64 2657.41,795.89">
+        <lane id="entrada-uf_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.11" length="71.19" shape="2704.75,753.49 2685.26,752.02 2675.46,755.67 2668.75,760.82 2663.92,767.64 2660.95,779.93 2659.84,789.12">
+            <param key="origId" value="30526431"/>
+        </lane>
+        <lane id="entrada-uf_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.11" length="71.19" shape="2704.99,750.30 2684.80,748.78 2673.90,752.83 2666.41,758.58 2660.96,766.30 2657.79,779.35 2656.66,788.74">
+            <param key="origId" value="30526431"/>
+        </lane>
+    </edge>
+    <edge id="morro-0" from="1367635095" to="1367635062" name="Rua Nossa Senhora de Fátima" priority="3" type="highway.residential">
+        <lane id="morro-0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="132.27" shape="2920.93,1299.63 2830.60,1203.01">
+            <param key="origId" value="122366439"/>
+        </lane>
+    </edge>
+    <edge id="morro-0-s" from="8920469721" to="cluster_1349432737_8920469726" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center" shape="2683.05,832.83 2691.03,844.61 2698.01,858.05">
+        <lane id="morro-0-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="27.86" shape="2683.05,832.83 2691.03,844.61 2697.31,856.71">
+            <param key="origId" value="964405645"/>
+        </lane>
+        <param key="origTo" value="8920469726"/>
+    </edge>
+    <edge id="morro-1" from="1367635062" to="1349432707" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2831.20,1201.30 2804.23,1090.72 2774.82,1025.10">
+        <lane id="morro-1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="184.45" shape="2829.45,1200.86 2802.71,1091.24 2773.42,1025.89">
+            <param key="origId" value="118998146"/>
+        </lane>
+    </edge>
+    <edge id="morro-1-s" from="cluster_1349432737_8920469726" to="1349432612" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2698.48,860.62 2712.25,884.01 2740.43,946.87">
+        <lane id="morro-1-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="96.06" shape="2699.86,859.81 2713.67,883.27 2741.83,946.08">
+            <param key="origId" value="118998146"/>
+        </lane>
+        <param key="origFrom" value="1349432737"/>
+    </edge>
+    <edge id="morro-2" from="1349432707" to="1349432612" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary">
+        <lane id="morro-2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="85.16" shape="2773.30,1025.61 2739.03,947.65">
+            <param key="origId" value="118998146"/>
+        </lane>
+    </edge>
+    <edge id="morro-2-s" from="1349432612" to="1349432707" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary">
+        <lane id="morro-2-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="85.16" shape="2741.95,946.36 2776.22,1024.32">
+            <param key="origId" value="118998146"/>
+        </lane>
+    </edge>
+    <edge id="morro-3" from="1349432612" to="cluster_1349432737_8920469726" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2740.43,946.87 2712.25,884.01 2698.48,860.62">
+        <lane id="morro-3_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="95.70" shape="2738.91,947.39 2710.83,884.75 2697.10,861.43">
+            <param key="origId" value="118998146"/>
+        </lane>
+        <param key="origTo" value="1349432737"/>
+    </edge>
+    <edge id="morro-3-s" from="1349432707" to="1367635062" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2774.82,1025.10 2804.23,1090.72 2831.20,1201.30">
+        <lane id="morro-3-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="185.04" shape="2776.34,1024.58 2805.75,1090.20 2832.56,1200.11">
+            <param key="origId" value="118998146"/>
+        </lane>
+    </edge>
+    <edge id="morro-4" from="cluster_1349432737_8920469726" to="8920469722" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center" shape="2696.07,859.30 2677.04,838.35">
+        <lane id="morro-4_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="27.07" shape="2695.33,858.49 2677.13,838.45">
+            <param key="origId" value="964405646"/>
+        </lane>
+        <param key="origFrom" value="8920469726"/>
+    </edge>
+    <edge id="morro-4-s" from="1367635062" to="1367635095" name="Rua Nossa Senhora de Fátima" priority="3" type="highway.residential">
+        <lane id="morro-4-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="132.27" shape="2832.94,1200.82 2923.27,1297.45">
+            <param key="origId" value="122366439"/>
+        </lane>
+    </edge>
+    <edge id="saida-morro" from="4808995243" to="8920469721" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" spreadType="center" shape="2658.18,806.71 2671.03,820.45 2678.23,826.78 2683.05,832.83">
+        <lane id="saida-morro_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="31.59" shape="2661.28,810.03 2671.03,820.45 2678.23,826.78 2683.05,832.83">
+            <param key="origId" value="964405645"/>
+        </lane>
+    </edge>
+    <edge id="saida-sp" from="1337694487" to="cluster_1347793483_8936202920_8936202921" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2633.95,792.13 2628.20,790.95 2618.16,788.05 2606.50,786.78 2603.89,786.91">
+        <lane id="saida-sp_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="27.24" shape="2631.19,793.20 2627.82,792.50 2617.85,789.63 2606.45,788.38 2604.50,788.48">
+            <param key="origId" value="289398552"/>
+        </lane>
+        <param key="origTo" value="1347793483"/>
+    </edge>
+    <edge id="saida-uf" from="4808995240" to="1080973862" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center" shape="2649.16,790.16 2650.66,776.09 2664.01,706.23 2665.73,696.51">
+        <lane id="saida-uf_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="89.50" shape="2649.76,784.55 2650.66,776.09 2664.01,706.23 2665.73,696.51">
+            <param key="origId" value="118998152"/>
+        </lane>
+    </edge>
+    <edge id="sp-0" from="337149987" to="cluster_1347793483_8936202920_8936202921" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2511.05,872.05 2529.21,860.35 2554.31,828.51 2572.69,805.52 2582.64,794.96 2591.31,791.68">
+        <lane id="sp-0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="116.05" shape="2508.45,868.01 2525.94,856.75 2550.55,825.53 2569.06,802.37 2579.91,790.86 2589.61,787.19">
+            <param key="origId" value="289398550 120142618"/>
+        </lane>
+        <lane id="sp-0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="116.05" shape="2510.18,870.70 2528.12,859.15 2553.06,827.52 2571.48,804.47 2581.73,793.59 2590.74,790.18">
+            <param key="origId" value="289398550 120142618"/>
+        </lane>
+        <param key="origTo" value="8936202920"/>
+    </edge>
+    <edge id="sp-0-s" from="cluster_1347793483_8936202920_8936202921" to="337149987" name="Rua José Lourenço Kelmer" priority="11" type="highway.secondary" shape="2591.31,791.68 2582.64,794.96 2572.69,805.52 2554.31,828.51 2529.21,860.35 2511.05,872.05">
+        <lane id="sp-0-s_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="115.01" shape="2591.88,793.18 2583.55,796.33 2573.90,806.57 2555.56,829.50 2530.30,861.55 2511.92,873.40">
+            <param key="origId" value="120142618 289398550"/>
+        </lane>
+        <param key="origFrom" value="8936202920"/>
+    </edge>
+    <edge id="uf-0" from="256929889" to="3544585622" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center" shape="2913.24,792.92 2894.37,792.16 2856.06,782.92">
+        <lane id="uf-0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="58.15" shape="2913.18,794.52 2894.15,793.75 2855.83,784.51">
+            <param key="origId" value="30526440"/>
+        </lane>
+        <lane id="uf-0_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="58.15" shape="2913.30,791.32 2894.59,790.57 2856.58,781.40">
+            <param key="origId" value="30526440"/>
+        </lane>
+    </edge>
+    <edge id="uf-1" from="3544585622" to="2473922008" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="uf-1_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="80.59" shape="2855.56,784.45 2777.00,766.46">
+            <param key="origId" value="30526440"/>
+        </lane>
+        <lane id="uf-1_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="80.59" shape="2856.27,781.33 2777.71,763.34">
+            <param key="origId" value="30526440"/>
+        </lane>
+    </edge>
+    <edge id="uf-2" from="2473922008" to="7847727627" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="uf-2_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="28.79" shape="2776.72,766.40 2748.61,760.13">
+            <param key="origId" value="30526440"/>
+        </lane>
+        <lane id="uf-2_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="28.79" shape="2777.41,763.28 2749.31,757.01">
+            <param key="origId" value="30526440"/>
+        </lane>
+    </edge>
+    <edge id="uf-3" from="7847727627" to="337145986" name="Avenida Presidente Itamar Franco" priority="11" type="highway.secondary" spreadType="center" shape="2744.71,759.26 2739.31,758.05 2708.46,750.59">
+        <lane id="uf-3_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="29.93" shape="2740.11,761.51 2738.58,761.17 2710.96,754.49">
+            <param key="origId" value="30526440"/>
+        </lane>
+        <lane id="uf-3_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="29.93" shape="2740.81,758.39 2739.31,758.05 2711.71,751.38">
+            <param key="origId" value="30526440"/>
+        </lane>
+        <lane id="uf-3_2" index="2" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="29.93" shape="2741.51,755.26 2740.04,754.93 2712.46,748.27">
+            <param key="origId" value="30526440"/>
+        </lane>
+    </edge>
+
+    <junction id="1080973862" type="dead_end" x="2665.73" y="696.51" incLanes="saida-uf_0" intLanes="" shape="2664.15,696.23 2667.31,696.79"/>
+    <junction id="1337694466" type="priority" x="2641.85" y="792.40" incLanes="964406023_0 964406023_1 118998150#2_0" intLanes=":1337694466_0_0 :1337694466_0_1 :1337694466_2_0 :1337694466_2_1" shape="2647.40,793.88 2645.07,787.86 2642.99,788.36 2641.44,788.71 2640.15,788.92 2638.84,789.02 2637.25,789.03 2635.11,788.97 2634.90,795.36 2636.95,795.85 2637.52,796.40 2637.79,797.14 2637.75,798.08 2637.41,799.22 2640.39,800.40 2642.11,797.31 2643.20,796.10 2644.45,795.13 2645.85,794.39">
+        <request index="0" response="0100" foes="0100" cont="0"/>
+        <request index="1" response="1100" foes="1100" cont="0"/>
+        <request index="2" response="0000" foes="0011" cont="0"/>
+        <request index="3" response="0000" foes="0010" cont="0"/>
+    </junction>
+    <junction id="1337694471" type="priority_stop" x="2651.23" y="814.33" incLanes="entrada-morro_0 118998150#6_0" intLanes=":1337694471_0_0 :1337694471_1_0" shape="2653.45,817.70 2655.20,815.02 2654.64,814.46 2654.55,814.17 2654.61,813.87 2654.79,813.57 2655.12,813.26 2653.11,810.76 2651.82,811.61 2651.23,811.83 2650.69,811.92 2650.19,811.89 2649.73,811.72 2648.22,814.54 2650.21,815.63 2650.89,816.03 2651.56,816.45">
+        <request index="0" response="10" foes="10" cont="0"/>
+        <request index="1" response="00" foes="01" cont="0"/>
+    </junction>
+    <junction id="1337694487" type="priority_stop" x="2633.95" y="792.13" incLanes="964406022_0 entrada-sp_0 entrada-sp_1" intLanes=":1337694487_0_0 :1337694487_1_0 :1337694487_1_1" shape="2634.23,798.63 2637.29,797.71 2637.18,796.45 2637.38,796.02 2637.75,795.71 2638.29,795.54 2639.00,795.50 2639.21,789.11 2636.71,788.25 2635.98,787.47 2635.26,786.64 2634.28,785.89 2632.80,785.36 2630.87,794.77 2632.29,795.41 2632.88,795.97 2633.41,796.70 2633.85,797.58">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="1347978308" type="dead_end" x="2309.48" y="529.83" incLanes="" intLanes="" shape="2309.48,529.83"/>
+    <junction id="1348020470" type="dead_end" x="0.00" y="379.59" incLanes="" intLanes="" shape="0.00,379.59"/>
+    <junction id="1349432612" type="priority" x="2740.43" y="946.87" incLanes="morro-2_0 morro-1-s_0" intLanes=":1349432612_0_0 :1349432612_1_0" shape="2737.56,948.29 2743.42,945.72 2743.29,945.43 2737.45,948.04">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="1349432707" type="priority" x="2774.82" y="1025.10" incLanes="morro-1_0 morro-2-s_0" intLanes=":1349432707_0_0 :1349432707_1_0" shape="2771.96,1026.54 2777.80,1023.93 2777.69,1023.68 2771.83,1026.25">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="1367635062" type="priority" x="2831.20" y="1201.30" incLanes="morro-0_0 morro-3-s_0" intLanes=":1367635062_0_0 :1367635062_1_0" shape="2829.43,1204.10 2834.11,1199.73 2827.89,1201.24 2828.22,1202.42 2828.39,1202.82 2828.63,1203.18 2828.96,1203.58">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="1367635095" type="dead_end" x="2922.10" y="1298.54" incLanes="morro-4-s_0" intLanes="" shape="2922.10,1298.54 2924.44,1296.35 2922.10,1298.54"/>
+    <junction id="2473922008" type="priority" x="2777.21" y="764.87" incLanes="uf-1_0 uf-1_1" intLanes=":2473922008_0_0 :2473922008_0_1" shape="2776.64,768.02 2778.07,761.78 2777.76,761.71 2776.37,767.96">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="256929889" type="dead_end" x="2913.24" y="792.92" incLanes="" intLanes="" shape="2913.37,789.72 2913.11,796.12"/>
+    <junction id="2815570999" type="priority" x="2637.39" y="803.60" incLanes="118998150#1_0" intLanes=":2815570999_0_0 :2815570999_1_0" shape="2638.29,807.18 2640.75,805.14 2640.15,803.50 2640.16,802.37 2640.39,801.03 2640.82,799.48 2641.46,797.72 2638.48,796.53 2637.92,797.51 2637.65,797.62 2637.40,797.48 2637.15,797.10 2636.92,796.46 2633.85,797.38 2634.48,799.61 2634.93,801.29 2635.36,802.66 2635.95,803.95 2636.87,805.38">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="2852921555" type="dead_end" x="1760.81" y="971.31" incLanes="" intLanes="" shape="1760.81,971.31"/>
+    <junction id="337145986" type="priority" x="2708.83" y="749.03" incLanes="uf-3_0 uf-3_1 uf-3_2" intLanes=":337145986_0_0 :337145986_0_1" shape="2710.58,756.04 2712.84,746.71 2710.00,746.88 2709.01,747.47 2708.02,748.11 2706.80,748.60 2705.12,748.71 2704.63,755.09 2706.86,755.28 2707.64,755.38 2708.41,755.53 2709.33,755.74">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="337149987" type="dead_end" x="2511.05" y="872.05" incLanes="sp-0-s_0" intLanes="" shape="2511.05,872.05 2512.78,874.74 2511.05,872.05"/>
+    <junction id="3544585622" type="priority" x="2856.06" y="782.92" incLanes="uf-0_0 uf-0_1" intLanes=":3544585622_0_0 :3544585622_0_1" shape="2855.45,786.07 2856.95,779.84 2856.63,779.77 2855.20,786.01">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="4808995240" type="priority" x="2649.16" y="790.16" incLanes="118998150#3_0 118998150#3_1" intLanes=":4808995240_0_0 :4808995240_1_0" shape="2652.41,794.97 2654.54,792.48 2652.50,790.69 2651.84,789.50 2651.43,788.11 2651.27,786.51 2651.35,784.72 2648.17,784.38 2647.70,786.01 2647.26,786.65 2646.69,787.16 2645.98,787.56 2645.13,787.84 2646.64,794.06 2648.83,793.68 2649.63,793.73 2650.41,793.95 2651.29,794.36">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="4808995242" type="priority_stop" x="2657.41" y="795.89" incLanes="entrada-uf_0 entrada-uf_1 118998150#4_0" intLanes=":4808995242_0_0 :4808995242_0_1 :4808995242_2_0 :4808995242_2_1" shape="2654.67,800.55 2661.03,799.90 2660.83,797.65 2660.76,795.98 2660.79,794.60 2660.92,793.22 2661.14,791.56 2661.43,789.31 2655.07,788.54 2654.45,790.56 2653.92,791.00 2653.25,791.06 2652.43,790.74 2651.47,790.04 2649.89,792.90 2652.54,795.19 2653.39,796.15 2653.98,797.22 2654.39,798.63">
+        <request index="0" response="0100" foes="0100" cont="0"/>
+        <request index="1" response="1100" foes="1100" cont="0"/>
+        <request index="2" response="0000" foes="0011" cont="0"/>
+        <request index="3" response="0000" foes="0010" cont="0"/>
+    </junction>
+    <junction id="4808995243" type="priority" x="2658.18" y="806.71" incLanes="118998150#5_0 118998150#5_1" intLanes=":4808995243_0_0 :4808995243_1_0" shape="2660.12,811.12 2662.45,808.94 2661.74,808.09 2661.55,807.74 2661.44,807.35 2661.39,806.88 2661.38,806.25 2654.98,806.32 2654.89,808.02 2654.78,808.69 2654.61,809.23 2654.39,809.65 2654.14,809.92 2656.81,811.68 2657.88,810.55 2658.43,810.34 2658.99,810.37 2659.55,810.63">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="7826016110" type="dead_end" x="2484.16" y="534.06" incLanes="" intLanes="" shape="2484.16,534.06"/>
+    <junction id="7847727627" type="priority" x="2745.06" y="757.70" incLanes="uf-2_0 uf-2_1" intLanes=":7847727627_0_0 :7847727627_0_1 :7847727627_0_2" shape="2748.27,761.69 2749.66,755.45 2741.86,753.70 2739.76,763.07 2742.90,762.92 2745.13,761.84 2746.47,761.54">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="8920469721" type="priority" x="2683.05" y="832.83" incLanes="saida-morro_0" intLanes=":8920469721_0_0" shape="2681.76,833.78 2684.41,831.98 2684.26,831.78">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="8920469722" type="priority" x="2677.04" y="838.35" incLanes="morro-4_0" intLanes=":8920469722_0_0" shape="2675.94,839.52 2678.31,837.37 2678.10,837.15 2675.80,839.37">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="cluster_1347793483_8936202920_8936202921" type="priority" x="2595.86" y="782.95" incLanes="saida-sp_0 sp-0_0 sp-0_1" intLanes=":cluster_1347793483_8936202920_8936202921_0_0 :cluster_1347793483_8936202920_8936202921_1_0 :cluster_1347793483_8936202920_8936202921_1_1" shape="2604.58,790.08 2604.11,780.49 2600.75,780.82 2598.32,781.39 2596.39,782.18 2594.49,783.18 2592.20,784.36 2589.05,785.69 2592.44,794.67 2595.00,793.56 2596.85,792.53 2598.36,791.64 2599.90,790.90 2601.86,790.37">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+        <param key="origEdgeIds" value="-965964445 965964445 965964446 965964447"/>
+        <param key="origId" value="1347793483 8936202920 8936202921"/>
+    </junction>
+    <junction id="cluster_1349432737_8920469726" type="priority" x="2697.64" y="859.61" incLanes="morro-3_0 morro-0-s_0" intLanes=":cluster_1349432737_8920469726_0_0 :cluster_1349432737_8920469726_1_0" shape="2695.72,862.24 2701.24,859.00 2700.27,857.71 2699.85,857.32 2699.44,856.92 2699.01,856.39 2698.54,855.60 2694.14,859.55 2694.84,860.47 2695.03,860.83 2695.19,861.21 2695.40,861.66">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+        <param key="origEdgeIds" value="-965008315 965008315"/>
+        <param key="origId" value="1349432737 8920469726"/>
+    </junction>
+
+    <connection from="118998150#1" to="964406022" fromLane="0" toLane="0" via=":2815570999_0_0" dir="s" state="M"/>
+    <connection from="118998150#1" to="118998150#2" fromLane="0" toLane="0" via=":2815570999_1_0" dir="s" state="M"/>
+    <connection from="118998150#2" to="118998150#3" fromLane="0" toLane="0" via=":1337694466_2_0" dir="s" state="M"/>
+    <connection from="118998150#2" to="118998150#3" fromLane="0" toLane="1" via=":1337694466_2_1" dir="s" state="M"/>
+    <connection from="118998150#3" to="saida-uf" fromLane="0" toLane="0" via=":4808995240_0_0" dir="r" state="M"/>
+    <connection from="118998150#3" to="118998150#4" fromLane="1" toLane="0" via=":4808995240_1_0" dir="s" state="M"/>
+    <connection from="118998150#4" to="118998150#5" fromLane="0" toLane="0" via=":4808995242_2_0" dir="s" state="M"/>
+    <connection from="118998150#4" to="118998150#5" fromLane="0" toLane="1" via=":4808995242_2_1" dir="s" state="M"/>
+    <connection from="118998150#5" to="saida-morro" fromLane="0" toLane="0" via=":4808995243_0_0" dir="R" state="M"/>
+    <connection from="118998150#5" to="118998150#6" fromLane="1" toLane="0" via=":4808995243_1_0" dir="s" state="M"/>
+    <connection from="118998150#6" to="118998150#1" fromLane="0" toLane="0" via=":1337694471_1_0" dir="s" state="M"/>
+    <connection from="964406022" to="saida-sp" fromLane="0" toLane="0" via=":1337694487_0_0" dir="r" state="M"/>
+    <connection from="964406023" to="118998150#3" fromLane="0" toLane="0" via=":1337694466_0_0" dir="s" state="m" visibility="9.00"/>
+    <connection from="964406023" to="118998150#3" fromLane="1" toLane="1" via=":1337694466_0_1" dir="s" state="m" visibility="9.00"/>
+    <connection from="entrada-morro" to="118998150#1" fromLane="0" toLane="0" via=":1337694471_0_0" dir="s" state="s" visibility="9.00"/>
+    <connection from="entrada-sp" to="964406023" fromLane="0" toLane="0" via=":1337694487_1_0" dir="s" state="M"/>
+    <connection from="entrada-sp" to="964406023" fromLane="1" toLane="1" via=":1337694487_1_1" dir="s" state="M"/>
+    <connection from="entrada-uf" to="118998150#5" fromLane="0" toLane="0" via=":4808995242_0_0" dir="s" state="s"/>
+    <connection from="entrada-uf" to="118998150#5" fromLane="1" toLane="1" via=":4808995242_0_1" dir="s" state="s"/>
+    <connection from="morro-0" to="morro-1" fromLane="0" toLane="0" keepClear="0" via=":1367635062_0_0" dir="s" state="M"/>
+    <connection from="morro-0-s" to="morro-1-s" fromLane="0" toLane="0" keepClear="0" via=":cluster_1349432737_8920469726_1_0" dir="s" state="M"/>
+    <connection from="morro-1" to="morro-2" fromLane="0" toLane="0" keepClear="0" via=":1349432707_0_0" dir="s" state="M"/>
+    <connection from="morro-1-s" to="morro-2-s" fromLane="0" toLane="0" keepClear="0" via=":1349432612_1_0" dir="s" state="M"/>
+    <connection from="morro-2" to="morro-3" fromLane="0" toLane="0" keepClear="0" via=":1349432612_0_0" dir="s" state="M"/>
+    <connection from="morro-2-s" to="morro-3-s" fromLane="0" toLane="0" keepClear="0" via=":1349432707_1_0" dir="s" state="M"/>
+    <connection from="morro-3" to="morro-4" fromLane="0" toLane="0" keepClear="0" via=":cluster_1349432737_8920469726_0_0" dir="s" state="M"/>
+    <connection from="morro-3-s" to="morro-4-s" fromLane="0" toLane="0" keepClear="0" via=":1367635062_1_0" dir="s" state="M"/>
+    <connection from="morro-4" to="entrada-morro" fromLane="0" toLane="0" via=":8920469722_0_0" dir="s" state="M"/>
+    <connection from="saida-morro" to="morro-0-s" fromLane="0" toLane="0" via=":8920469721_0_0" dir="s" state="M"/>
+    <connection from="saida-sp" to="sp-0-s" fromLane="0" toLane="0" via=":cluster_1347793483_8936202920_8936202921_0_0" dir="s" state="M"/>
+    <connection from="sp-0" to="entrada-sp" fromLane="0" toLane="0" via=":cluster_1347793483_8936202920_8936202921_1_0" dir="s" state="M"/>
+    <connection from="sp-0" to="entrada-sp" fromLane="1" toLane="1" via=":cluster_1347793483_8936202920_8936202921_1_1" dir="s" state="M"/>
+    <connection from="uf-0" to="uf-1" fromLane="0" toLane="0" via=":3544585622_0_0" dir="s" state="M"/>
+    <connection from="uf-0" to="uf-1" fromLane="1" toLane="1" via=":3544585622_0_1" dir="s" state="M"/>
+    <connection from="uf-1" to="uf-2" fromLane="0" toLane="0" via=":2473922008_0_0" dir="s" state="M"/>
+    <connection from="uf-1" to="uf-2" fromLane="1" toLane="1" via=":2473922008_0_1" dir="s" state="M"/>
+    <connection from="uf-2" to="uf-3" fromLane="0" toLane="0" via=":7847727627_0_0" dir="s" state="M"/>
+    <connection from="uf-2" to="uf-3" fromLane="0" toLane="1" via=":7847727627_0_1" dir="s" state="M"/>
+    <connection from="uf-2" to="uf-3" fromLane="1" toLane="2" via=":7847727627_0_2" dir="s" state="M"/>
+    <connection from="uf-3" to="entrada-uf" fromLane="0" toLane="0" via=":337145986_0_0" dir="s" state="M"/>
+    <connection from="uf-3" to="entrada-uf" fromLane="1" toLane="1" via=":337145986_0_1" dir="s" state="M"/>
+
+    <connection from=":1337694466_0" to="118998150#3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1337694466_0" to="118998150#3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":1337694466_2" to="118998150#3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1337694466_2" to="118998150#3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":1337694471_0" to="118998150#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1337694471_1" to="118998150#1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1337694487_0" to="saida-sp" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":1337694487_1" to="964406023" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1337694487_1" to="964406023" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":1349432612_0" to="morro-3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1349432612_1" to="morro-2-s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1349432707_0" to="morro-2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1349432707_1" to="morro-3-s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1367635062_0" to="morro-1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":1367635062_1" to="morro-4-s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2473922008_0" to="uf-2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2473922008_0" to="uf-2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":2815570999_0" to="964406022" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":2815570999_1" to="118998150#2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":337145986_0" to="entrada-uf" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":337145986_0" to="entrada-uf" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":3544585622_0" to="uf-1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":3544585622_0" to="uf-1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":4808995240_0" to="saida-uf" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":4808995240_1" to="118998150#4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":4808995242_0" to="118998150#5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":4808995242_0" to="118998150#5" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":4808995242_2" to="118998150#5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":4808995242_2" to="118998150#5" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":4808995243_0" to="saida-morro" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":4808995243_1" to="118998150#6" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":7847727627_0" to="uf-3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":7847727627_0" to="uf-3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":7847727627_0" to="uf-3" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":8920469721_0" to="morro-0-s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":8920469722_0" to="entrada-morro" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1347793483_8936202920_8936202921_0" to="sp-0-s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1347793483_8936202920_8936202921_1" to="entrada-sp" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1347793483_8936202920_8936202921_1" to="entrada-sp" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":cluster_1349432737_8920469726_0" to="morro-4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":cluster_1349432737_8920469726_1" to="morro-1-s" fromLane="0" toLane="0" dir="s" state="M"/>
+
+    <roundabout nodes="1337694466 1337694471 2815570999 4808995240 4808995242 4808995243" edges="118998150#1 118998150#2 118998150#3 118998150#4 118998150#5 118998150#6"/>
+
+</net>
