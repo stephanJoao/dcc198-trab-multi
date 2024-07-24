@@ -14,7 +14,7 @@ if __name__ == '__main__':
 	#factors = [0.5, 1.0, 1.5]
 	#factors = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
 	menor_fator = 0.5
-	maior_fator = 3.0
+	maior_fator = 5.0
 	intervalo = 0.10
 	factors = [round(menor_fator + i * intervalo, 10) for i in range(int((maior_fator - menor_fator) / intervalo) + 1)]
 	#print(factors)
@@ -59,12 +59,12 @@ if __name__ == '__main__':
 		#data_stats = pd.concat([df_stats, stats], axis=0)
 		#df_stats.to_csv('stats.csv', index=False)
     
-	#df_results.to_csv('results.csv', index=False)
+	df_results.to_csv('results.csv', index=False)
 	plot_results(df_results)
  
 	selected_metrics = [
-		'vehicles_inserted',
 		'vehicleTripStatistics_duration'
+		'vehicles_inserted',
 		'vehicleTripStatistics_speed',
 		'vehicleTripStatistics_timeLoss'
 	]

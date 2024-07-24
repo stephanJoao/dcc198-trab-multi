@@ -3,16 +3,16 @@
 	<vType id="carro" vClass="passenger" />
 	<vType id="onibus" vClass="bus" />
 
-	<flow id="CMSP" color="0,0,255" begin="0" end="1800" period="14" type="carro" departLane="best" from="morro-0" to="sp-0-s"/>
-	<flow id="OMSP" color="0,0,255" begin="0" end="1800" period="300" type="onibus" departLane="best" from="morro-0" to="sp-0-s"/>
-	<flow id="CMUF" color="0,0,255" begin="0" end="1800" period="4" type="carro" departLane="best" from="morro-0" to="saida-uf"/>
-	<flow id="OMUF" color="0,0,255" begin="0" end="1800" period="200" type="onibus" departLane="best" from="morro-0" to="saida-uf"/>
-	<flow id="CSPM" color="0,255,0" begin="0" end="1800" period="4" type="carro" departLane="best" from="sp-0" to="morro-4-s"/>
-	<flow id="OSPM" color="0,255,0" begin="0" end="1800" period="66" type="onibus" departLane="best" from="sp-0" to="morro-4-s"/>
-	<flow id="CSPUF" color="0,255,0" begin="0" end="1800" period="2" type="carro" departLane="best" from="sp-0" to="saida-uf"/>
-	<flow id="OSPUF" color="0,255,0" begin="0" end="1800" period="100" type="onibus" departLane="best" from="sp-0" to="saida-uf"/>
-	<flow id="CUFM" color="255,0,0" begin="0" end="1800" period="2" type="carro" departLane="best" from="uf-0" to="morro-4-s"/>
-	<flow id="OUFM" color="255,0,0" begin="0" end="1800" period="300" type="onibus" departLane="best" from="uf-0" to="morro-4-s"/>
-	<flow id="CUFSP" color="255,0,0" begin="0" end="1800" period="3" type="carro" departLane="best" from="uf-0" to="sp-0-s"/>
-	<flow id="OUFSP" color="255,0,0" begin="0" end="1800" period="150" type="onibus" departLane="best" from="uf-0" to="sp-0-s"/>
+	<flow id="CMSP" color="0,0,255" begin="0" end="3600" period="17" type="carro" departLane="best" from="morro-0" to="sp-0-s"/>
+	<flow id="OMSP" color="0,0,255" begin="0" end="3600" period="360" type="onibus" departLane="best" from="morro-0" to="sp-0-s"/>
+	<flow id="CMUF" color="0,0,255" begin="0" end="3600" period="4" type="carro" departLane="best" from="morro-0" to="saida-uf"/>
+	<flow id="OMUF" color="0,0,255" begin="0" end="3600" period="240" type="onibus" departLane="best" from="morro-0" to="saida-uf"/>
+	<flow id="CSPM" color="0,255,0" begin="0" end="3600" period="5" type="carro" departLane="best" from="sp-0" to="morro-4-s"/>
+	<flow id="OSPM" color="0,255,0" begin="0" end="3600" period="80" type="onibus" departLane="best" from="sp-0" to="morro-4-s"/>
+	<flow id="CSPUF" color="0,255,0" begin="0" end="3600" period="2" type="carro" departLane="best" from="sp-0" to="saida-uf"/>
+	<flow id="OSPUF" color="0,255,0" begin="0" end="3600" period="120" type="onibus" departLane="best" from="sp-0" to="saida-uf"/>
+	<flow id="CUFM" color="255,0,0" begin="0" end="3600" period="2" type="carro" departLane="best" from="uf-0" to="morro-4-s"/>
+	<flow id="OUFM" color="255,0,0" begin="0" end="3600" period="360" type="onibus" departLane="best" from="uf-0" to="morro-4-s"/>
+	<flow id="CUFSP" color="255,0,0" begin="0" end="3600" period="3" type="carro" departLane="best" from="uf-0" to="sp-0-s"/>
+	<flow id="OUFSP" color="255,0,0" begin="0" end="3600" period="180" type="onibus" departLane="best" from="uf-0" to="sp-0-s"/>
 </routes>
