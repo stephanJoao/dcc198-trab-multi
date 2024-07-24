@@ -7,7 +7,8 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 	print('\n---- GERANDO INPUT ----\n')
 
 	# HARD CODED VALUES
-	collected_data_time = 1800 # 30 minutes
+	#collected_data_time = 1800 # 30 minutes
+	collected_data_time = 3600 # 60 minutes
 	avg_bus_capacity = 40
 	avg_bus_usage = 0.5
 	avg_car_capacity = 4

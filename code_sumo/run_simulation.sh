@@ -34,7 +34,7 @@ for i in $(seq 1 $NUM_EXECUTIONS); do
     SEED=$i
     OUTPUT_FILE="$RAWDUMP_DIR/rawDump_$i.xml"
     echo "Executando simulação com seed $SEED e salvando em $OUTPUT_FILE"
-    "$SUMO_DIR/sumo" -c "$CONFIG_FILE" --seed $SEED --netstate-dump "$OUTPUT_FILE" --statistic-output ./output/estatistica.xml > "$OUTPUT_DIR"/output_$i.txt
+    "$SUMO_DIR/sumo" -c "$CONFIG_FILE" --seed $SEED --netstate-dump "$OUTPUT_FILE" --statistic-output ./output/estatistica.xml -b 600 -e 2400 > "$OUTPUT_DIR"/output_$i.txt
 done
 
 echo "Todas as execuções foram concluídas."

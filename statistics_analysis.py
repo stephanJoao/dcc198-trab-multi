@@ -27,15 +27,15 @@ def analysis_statistics(xml_file):
     # Criando um dicionário com os valores extraídos
     data = {
         'performance': {
-        #    'clockBegin': performance.get('clockBegin'),
-        #    'clockEnd': performance.get('clockEnd'),
+            #'clockBegin': performance.get('clockBegin'),
+            #'clockEnd': performance.get('clockEnd'),
             'clockDuration': performance.get('clockDuration'),
             'traciDuration': performance.get('traciDuration'),
             'realTimeFactor': performance.get('realTimeFactor'),
             #'vehicleUpdatesPerSecond': performance.get('vehicleUpdatesPerSecond'),
             #'personUpdatesPerSecond': performance.get('personUpdatesPerSecond'),
-            #'begin': performance.get('begin'),
-            #'end': performance.get('end'),
+            'begin': performance.get('begin'),
+            'end': performance.get('end'),
             'duration': performance.get('duration')
         },
         'vehicles': {

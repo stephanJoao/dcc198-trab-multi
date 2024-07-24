@@ -14,13 +14,15 @@ def plot_results(df_results, output_dir='imagens'):
 		df_type = df_results[df_results['type'] == type]
 		df_type = df_type.sort_values(by='factor')
 
-		plt.plot(df_type['factor'], df_type['saida-uf'], label='Saída UF')
-		plt.plot(df_type['factor'], df_type['saida-morro'], label='Saída Morro')
-		plt.plot(df_type['factor'], df_type['saida-sp'], label='Saída SP')
+		plt.plot(df_type['factor'], df_type['saida-uf'], label='Saída UF', marker='o', linestyle='-')
+		plt.plot(df_type['factor'], df_type['saida-morro'], label='Saída Morro', marker='o', linestyle='-')
+		plt.plot(df_type['factor'], df_type['saida-sp'], label='Saída SP', marker='o', linestyle='-')
 
 		plt.xlabel('Fator de multiplicação')
 		plt.ylabel('Fluxo médio')
 		plt.legend()
+		plt.grid(True)
+
 		#plt.show()
 
 		# Salva o gráfico no arquivo

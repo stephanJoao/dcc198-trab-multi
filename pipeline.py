@@ -11,12 +11,13 @@ if __name__ == '__main__':
 	df_results = pd.DataFrame()
 	list_stats = []
 	
+	#factors = [0.5, 1.0, 1.5]
 	#factors = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
 	menor_fator = 0.5
 	maior_fator = 3.0
 	intervalo = 0.10
 	factors = [round(menor_fator + i * intervalo, 10) for i in range(int((maior_fator - menor_fator) / intervalo) + 1)]
-	print(factors)
+	#print(factors)
 	
 	cars_subs = 0.0
 
@@ -63,9 +64,9 @@ if __name__ == '__main__':
  
 	selected_metrics = [
 		'vehicles_inserted',
+		'vehicleTripStatistics_duration'
 		'vehicleTripStatistics_speed',
 		'vehicleTripStatistics_timeLoss'
-		'vehicleTripStatistics_duration'
 	]
 
 	plot_graph(list_stats, selected_metrics)
