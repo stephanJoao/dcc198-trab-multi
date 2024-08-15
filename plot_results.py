@@ -20,16 +20,22 @@ def plot_results(df_results, output_dir='imagens'):
 
 		plt.xlabel('Fator de multiplicação')
 		plt.ylabel('Fluxo médio')
+  
+		if type == 'car':
+			plt.ylim(0, 0.40)
+		elif type == 'bus':
+			plt.ylim(0, 0.0225)
+	
 		plt.legend()
 		plt.grid(True)
 
 		#plt.show()
 
 		# Salva o gráfico no arquivo
-		filename = os.path.join(output_dir, f'fluxo_{type}_vs_factor.png')
+		filename = os.path.join(output_dir, f'fluxo_{type}_vs_factor_03.png')
 		plt.savefig(filename)
 		plt.close()  # Fecha o gráfico para liberar memória
 
 
-
-
+df_results = pd.read_csv('results03.csv')
+plot_results(df_results, 'imagens_comp')

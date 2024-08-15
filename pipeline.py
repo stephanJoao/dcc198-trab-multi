@@ -49,34 +49,37 @@ if __name__ == '__main__':
 			df_results = pd.concat([df_results, results], axis=0)
 			
 			# analisando o arquivo com estatisticas gerais
-			xml_file = './output/estatistica.xml'
-			stats = analysis_statistics(xml_file)
+			# xml_file = './output/estatistica.xml'
+			# stats = analysis_statistics(xml_file)
 			
-			flattened_data = {
-				'factor': factor,
-				**{'performance_' + k: v for k, v in stats['performance'].items()},
-				**{'vehicles_' + k: v for k, v in stats['vehicles'].items()},
-				**{'vehicleTripStatistics_' + k: v for k, v in stats['vehicleTripStatistics'].items()}
-			}
+			# flattened_data = {
+			# 	'factor': factor,
+			# 	**{'performance_' + k: v for k, v in stats['performance'].items()},
+			# 	**{'vehicles_' + k: v for k, v in stats['vehicles'].items()},
+			# 	**{'vehicleTripStatistics_' + k: v for k, v in stats['vehicleTripStatistics'].items()}
+			# }
 			
-			list_stats.append(flattened_data)
+			# list_stats.append(flattened_data)
 			#data_stats = pd.concat([df_stats, stats], axis=0)
 			#df_stats.to_csv('stats.csv', index=False)
     
-		df_results.to_csv('results.csv', index=False)
-		plot_results(df_results, 'imagens_cars'+str(cars_subs))
-		list_stats_list.append(list_stats)
+		df_results.to_csv('results'+str(cars_subs)+'.csv', index=False)
+		# plot_results(df_results, 'imagens_cars'+str(cars_subs))
+		
+  		# list_stats_list.append(list_stats)
  
-	selected_metrics = [
-		'vehicleTripStatistics_duration',
-		'vehicles_inserted',
-		'vehicleTripStatistics_speed',
-		'vehicleTripStatistics_timeLoss'
-	]
+	# selected_metrics = [
+	# 	'vehicleTripStatistics_duration',
+	# 	'vehicles_inserted',
+	# 	'vehicleTripStatistics_speed',
+	# 	'vehicleTripStatistics_timeLoss'
+	# ]
 
 	# plot_graph(list_stats, selected_metrics, 'imagens_cars')
-	for i,list_stats in enumerate(list_stats_list):
- 		save_to_csv(list_stats, "data_"+str(i)+".csv")
+	
+ 	# for i,list_stats in enumerate(list_stats_list):
+ 	# 	save_to_csv(list_stats, "data_"+str(i)+".csv")
+    
     # Adiciona o dicionário à lista
 	# plot car flux
 	# plot bus flux
