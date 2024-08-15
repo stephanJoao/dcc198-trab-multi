@@ -31,10 +31,20 @@ def plot_comparison(data_a, data_b, data_c, metrics, output_dir='imagens'):
         factors_c = [float(item['factor']) for item in data_c]
         values_c = [float(item[metric]) for item in data_c]
         plt.plot(factors_c, values_c, marker='^', linestyle='-', label='car_subs = 0.3')
-
-        plt.xlabel('Factor')
-        plt.ylabel(metric)
-        plt.title(f'{metric} vs. Factor')
+        
+        plt.xlabel('Fator')
+        if metric == 'vehicleTripStatistics_duration':
+            plt.ylabel("Duração da viagem (s)")
+        elif metric == 'vehicles_inserted':
+            plt.ylabel("Veículos inseridos")
+        elif metric == 'vehicleTripStatistics_speed':
+            plt.ylabel("Velocidade média (m/s)")
+        elif metric == 'vehicleTripStatistics_timeLoss':
+            plt.ylabel("Tempo abaixo da velocidade ideal (s)")
+        else:
+            plt.ylabel(metric)
+        
+        # plt.title(f'{metric} vs. Factor')
         plt.legend()
         plt.grid(True)
         
