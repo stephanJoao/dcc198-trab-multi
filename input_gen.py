@@ -9,10 +9,10 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 	# HARD CODED VALUES
 	#collected_data_time = 1800 # 30 minutes
 	collected_data_time = 3600 # 60 minutes
-	avg_bus_capacity = 40
-	avg_bus_usage = 0.5
-	avg_car_capacity = 4
-	avg_car_usage = 0.3
+	avg_bus_capacity = 80
+	avg_bus_usage = 0.35
+	avg_car_capacity = 5
+	avg_car_usage = 0.35
 	cars_to_buses = (avg_bus_capacity * avg_bus_usage) / (avg_car_capacity * avg_car_usage)
 	
 	data = pd.read_csv(data_file)
@@ -48,8 +48,8 @@ def input_gen(data_file='collected_data.csv', factor=1.0, cars_subs_percentage=0
 					print('buses (after):', buses)				
 				cars_period = (collected_data_time / ((cars + 1) * factor)).astype(int)
 				buses_period = (collected_data_time / ((buses + 1) * factor)).astype(int)
-				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" from="{5}" to="{6}"/>\n'.format(data_carro['id'].values[0], data_carro['color'].values[0], collected_data_time, cars_period, data_carro['veiculo'].values[0], data_carro['from'].values[0], data_carro['to'].values[0]))
-				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" from="{5}" to="{6}"/>\n'.format(data_onibus['id'].values[0], data_onibus['color'].values[0], collected_data_time, buses_period, data_onibus['veiculo'].values[0], data_onibus['from'].values[0], data_onibus['to'].values[0]))
+				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" departSpeed="max" from="{5}" to="{6}"/>\n'.format(data_carro['id'].values[0], data_carro['color'].values[0], collected_data_time, cars_period, data_carro['veiculo'].values[0], data_carro['from'].values[0], data_carro['to'].values[0]))
+				f.write('\t<flow id="{0}" color="{1}" begin="0" end="{2}" period="{3}" type="{4}" departLane="best" departSpeed="max" from="{5}" to="{6}"/>\n'.format(data_onibus['id'].values[0], data_onibus['color'].values[0], collected_data_time, buses_period, data_onibus['veiculo'].values[0], data_onibus['from'].values[0], data_onibus['to'].values[0]))
 		f.write('</routes>')
 	
 	print('\n---- INPUT GERADO ----\n')
